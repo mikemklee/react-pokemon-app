@@ -1,0 +1,59 @@
+.listItem {
+  background: #fff;
+  max-height: 30rem;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0px 1px 2px 1px #e1e1e1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0px 3px 3px 5px #e1e1e1;
+    background: darken(#fff, 1.5%);
+  }
+
+  &__image {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__name {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--text {
+      font-weight: bold;
+      color: green;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__addButton {
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    margin-top: 1rem;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 1px #e1e1e1;
+  }
+}
+
+.listItem__addButton:hover,
+.listItem--added .listItem__addButton {
+  background: #5898e8;
+  color: white;
+  cursor: pointer;
+}
+
+.listItem--added .listItem__addButton {
+  cursor: not-allowed;
+}

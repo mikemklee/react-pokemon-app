@@ -1,0 +1,9 @@
+.content {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+
+  @media only screen and (max-width: $bp-large) {
+    display: flex;
+    flex-direction: column;
+  }
+}

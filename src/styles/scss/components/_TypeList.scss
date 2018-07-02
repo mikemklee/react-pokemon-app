@@ -1,0 +1,73 @@
+.typeList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  overflow-x: auto;
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: row;
+  }
+}
+
+.typeList li {
+  background: #e4e3e3;
+  color: dimgrey;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.typeList li:hover {
+  background-color: #d6d6d6;
+}
+
+.typeList li.selected {
+  color: #fff;
+}
+
+.typeList li.any {
+  background-color: #b9b6d1;
+}
+
+.typeList li.normal {
+  background-color: #a6ab76;
+}
+
+.typeList li.electric {
+  background-color: #e3c260;
+}
+
+.typeList li.fire {
+  background-color: #fe7500;
+}
+
+.typeList li.water {
+  background-color: #6a87f3;
+}
+
+.typeList li.grass {
+  background-color: #53d34e;
+}
+
+.typeList li.bug {
+  background-color: #a0bf04;
+}
+
+.typeList li.fight {
+  background-color: #cf000b;
+}
+
+.typeList li.psychic {
+  background-color: #ff2482;
+}
+
+.typeList li.flying {
+  background-color: #b282f2;
+}
+
+.typeList li.fairy {
+  background-color: #e999de;
+}

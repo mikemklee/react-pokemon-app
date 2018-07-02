@@ -1,0 +1,52 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 23rem;
+  margin-right: 2rem;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.filterInput {
+  align-self: stretch;
+  padding: 0.5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 30rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+}
+
+.filterInput input {
+  width: 100%;
+  height: 4.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  display: block;
+  border: none;
+  box-shadow: 0px 1px 2px 1px #e1e1e1;
+
+  &::placeholder {
+    color: darken(lightgrey, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 2px 2px 1px #d2d0d0;
+  }
+}

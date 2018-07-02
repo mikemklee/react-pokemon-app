@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+  }
+
+  span {
+    font-size: 3rem;
+    font-family: "Fredoka One", cursive;
+  }
+}
+
+.cartBtn {
+  cursor: pointer;
+  position: relative;
+}
+
+.cartItemCount {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #ed4630;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5rem;
+  color: white;
+  z-index: 1;
+  right: -0.8rem;
+  top: -0.8rem;
+}
+
+.cartBtn img {
+  width: 5rem;
+  opacity: 0.4;
+}
